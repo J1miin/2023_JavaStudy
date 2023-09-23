@@ -7,9 +7,9 @@ public class Book_pg110 {
 		double iRes;
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("원화를 입력하세요 (단위 원) >>");
-		iWon = scanner.nextInt();
+		iWon = scanner.nextDouble();
 		iRes=iWon/1100;
-		System.out.println(iWon+"원은 $"+iRes);
+		System.out.printf("%.0f원은 $%.1f", iWon, iRes);
 		scanner.close();
 
 	}
