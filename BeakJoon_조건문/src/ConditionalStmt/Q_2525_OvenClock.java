@@ -23,7 +23,8 @@ public class Q_2525_OvenClock {
 		if (cookMod==0) {
 			iHour=iHour+cookMok;
 			if (iHour >23) {
-				iHour=iHour-24;
+				iHourMok=iHour/24;
+			    iHour=iHour-24*iHourMok;
 				System.out.print(iHour +" "+ iMin);
 			}else {
 				System.out.print(iHour +" "+ iMin);
@@ -35,7 +36,8 @@ public class Q_2525_OvenClock {
 				iHour=iHour+cookMok;
 				iMin=iMin-(60*cookMok);
 				if (iHour >23) {
-					iHour=iHour-24;
+					iHourMok=iHour/24;
+				    iHour=iHour-24*iHourMok;
 					System.out.print(iHour +" "+ iMin);
 				}else {
 					System.out.print(iHour +" "+ iMin);
@@ -43,7 +45,8 @@ public class Q_2525_OvenClock {
 			}else {
 				iHour=iHour+cookMok;
 				if (iHour >23) {
-					iHour=iHour-24;
+					iHourMok=iHour/24;
+				    iHour=iHour-24*iHourMok;
 					System.out.print(iHour +" "+ iMin);
 				}else {
 					System.out.print(iHour +" "+ iMin);
