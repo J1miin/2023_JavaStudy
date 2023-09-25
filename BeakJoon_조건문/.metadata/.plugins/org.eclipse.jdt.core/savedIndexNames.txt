@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+/Users/kimjimin/Desktop/JavaStudy/2023_JavaStudy/BeakJoon_조건문/.metadata/.plugins/org.eclipse.jdt.core
-3468314333.index
-2919991816.index
-1865797976.index
