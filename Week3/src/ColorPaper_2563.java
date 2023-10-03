@@ -24,7 +24,7 @@ public class ColorPaper_2563 {
 			for (int k=pos_X;k<pos_X+10;++k) {
 				for (int q=pos_Y;q<pos_Y+10;++q) {
 					if(iArray[k][q]==0) {
-						iArray[k][q]=1;
+						iArray[k][q]=1; 
 					}
 				}
 			}
