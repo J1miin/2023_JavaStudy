@@ -24,7 +24,7 @@ public class DictionaryApp {
 				
 			}else if(selectMenu ==3) {
 				System.out.print("삭제할 key값을 입력하세요: ");
-				key=scanner.nextLine();
+				key=scanner.next();
 				dictionary.delete(key);
 			}else if (selectMenu==4){
 				System.out.println("종료합니다. ");
@@ -41,8 +41,7 @@ public class DictionaryApp {
 	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		Dictionary dictionary = new Dictionary(); //새로운 객체 만들기
-		
+		Dictionary dictionary = new Dictionary(10); //새로운 객체 만들기
 		prnInfo(scanner,dictionary);
 		scanner.close();
 	}

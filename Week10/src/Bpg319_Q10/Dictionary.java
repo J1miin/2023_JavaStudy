@@ -3,15 +3,16 @@ package Bpg319_Q10;
 public class Dictionary extends PairMap {
 	int index=0;
 	//생성자 
-	public Dictionary() {
-		this.keyArray=new String[10];
-		this.valueArray=new String[10];
+	public Dictionary(int size) {
+		//궁금한 점: 매개변수가 없이 그냥 배열 크기만 제시하여 생성자를 만들면 실행이 안된다.. 왜그럴
+		this.keyArray=new String[size];
+		this.valueArray=new String[size];
 		
 	}
 
 	@Override
 	String get(String key) {
-		String returnString = "Nothing";
+		String returnString = null;
 		for (int i=0;i<keyArray.length;++i) {
 			if(key.equals(this.keyArray[i])) {
 				returnString=this.valueArray[i];
@@ -19,6 +20,7 @@ public class Dictionary extends PairMap {
 		}
 		return returnString;
 	}
+	 
 
 	@Override
 	void put(String key, String value) {
@@ -38,9 +40,11 @@ public class Dictionary extends PairMap {
 	String delete(String key) {
 		int i;
 		for (i=0;i<this.keyArray.length;++i) {
-			if(this.keyArray[i].equals(key)) {
+			if(key.equals(this.keyArray[i])) {
 				this.keyArray[i]=null;
 				this.valueArray[i]=null;
+				index--;
+				return null;
 			}
 		}
 		return valueArray[i];
