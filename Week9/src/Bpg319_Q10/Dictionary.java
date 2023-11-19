@@ -16,6 +16,8 @@ public class Dictionary extends PairMap {
 		for (int i=0;i<keyArray.length;++i) {
 			if(key.equals(this.keyArray[i])) {
 				returnString=this.valueArray[i];
+				//break해줘야 무의미하게 반복되는 걸 방지할 수 있을 것 같다.
+				//배열의 사이즈보다 아래에서 구할 length로 하는 것도 좋을것 같다. (딕셔너리에 있는 크기)
 			}
 		}
 		return returnString;
